@@ -34,7 +34,19 @@ while True:
     screen.fill(BLACK)
     screen.blit(image, rect)
     pygame.display.update()  # Or pygame.display.flip()
-import pygame
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    import pygame
 
 # Before you can do much with pygame, you will need to initialize it
 pygame.init()
