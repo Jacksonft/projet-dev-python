@@ -1,10 +1,14 @@
 
 
 import pygame
+
 if __name__ == "__main__":
+
     pygame.init()
 
     win = pygame.display.set_mode((500,500))
+
+    son = pygame.mixer.Sound("slideup.wav")
 
     pygame.display.set_caption("First Game")
 
@@ -20,6 +24,7 @@ if __name__ == "__main__":
     jumpCount = 10
 
     run = True
+
     while run:
         pygame.time.delay(50)
 
@@ -41,6 +46,7 @@ if __name__ == "__main__":
         #        y += vel
             if keys[pygame.K_SPACE]:
                 isJump = True
+                son.play()
         else:
             if jumpCount >= -10:
                 neg = 1
