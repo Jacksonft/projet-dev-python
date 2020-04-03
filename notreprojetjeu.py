@@ -18,7 +18,7 @@ if __name__ == "__main__":
     height = 60
     vel = 5
 
-
+    background = pygame.image.load('fond.jpg')
 
     isJump = False
     jumpCount = 10
@@ -27,6 +27,10 @@ if __name__ == "__main__":
 
     while run:
         pygame.time.delay(50)
+
+        #win.blit(background, (0, 10))
+
+        #win.blit(game.player.image, game.player.rect)
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -58,7 +62,9 @@ if __name__ == "__main__":
                 isJump = False
                 jumpCount = 10
 
+
         win.fill((0,0,0))
+        win.blit(background, (0, 10))
         pygame.draw.rect(win, (255,0,0), (x, y, width, height))
         pygame.display.update()
 
