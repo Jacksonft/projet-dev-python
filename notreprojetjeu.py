@@ -18,6 +18,11 @@ if __name__ == "__main__":
     height = 60
     vel = 5
 
+
+    player_image = pygame.image.load ('player.png')
+
+
+
     background = pygame.image.load('fond.jpg')
 
     isJump = False
@@ -27,8 +32,6 @@ if __name__ == "__main__":
 
     while run:
         pygame.time.delay(50)
-
-        #win.blit(background, (0, 10))
 
         #win.blit(game.player.image, game.player.rect)
 
@@ -65,7 +68,8 @@ if __name__ == "__main__":
 
         win.fill((0,0,0))
         win.blit(background, (0, 10))
-        pygame.draw.rect(win, (255,0,0), (x, y, width, height))
+        win.blit(player_image, (0,10))
+        #pygame.draw.rect(win, (255,0,0), (x, y, width, height))
         pygame.display.update()
 
     pygame.quit()
