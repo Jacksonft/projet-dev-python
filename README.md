@@ -1,8 +1,10 @@
 # Projet Python B1
 
-Le repository contient 5 fichiers :
+Le repository contient  fichiers :
 
 -le premier contient l'image qui est utilisé pour le fond du jeu
+
+-Un autre fichier contient l'image du projectille
 
 -le second contient l'ensemble du code du jeu (avec les class, les def, etc...)
 
